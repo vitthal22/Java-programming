@@ -1,0 +1,36 @@
+package com.MainApp;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Task2 {
+
+	public static void main(String[] args) throws IOException {
+		
+		String fname = "image.jpg";
+		String s = "C:\\Users\\vitth\\Desktop\\"+fname;
+		
+		FileInputStream fis = new FileInputStream(s);
+		
+		byte[] b =  fis.readAllBytes();
+		
+		String path2 = "C:\\Users\\vitth\\Desktop\\git repo\\Java programming\\Session19\\data"+fname;
+		
+		FileOutputStream fos = new FileOutputStream(path2);
+		
+		fos.write(b);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

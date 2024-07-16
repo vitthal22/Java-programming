@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.MainApp.LamdhaExpresion&apos; to &apos;LamdaExpresion&apos;&#x0D;&#x0A;- Original project: &apos;Session9&apos;&#x0D;&#x0A;- Original element: &apos;com.MainApp.LamdhaExpresion&apos;&#x0D;&#x0A;- Renamed element: &apos;com.MainApp.LamdaExpresion&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;LamdhaExpresion&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.MainApp{LamdhaExpresion.java[LamdhaExpresion" matchStrategy="1" name="LamdaExpresion" qualified="false" references="true" similarDeclarations="false" stamp="1719475213029" textual="false" version="1.0"/>
+</session>

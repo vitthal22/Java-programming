@@ -1,0 +1,51 @@
+package com.MainApp;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Serialization {
+
+	public static void main(String[] args) throws IOException, Exception {
+		
+		
+//		Employee e = new Employee(101, "vithal", 100000);
+//		
+//		String path = "C:\\Users\\vitth\\Desktop\\\\data.txt";
+//		FileOutputStream fos = new FileOutputStream(path);
+//		
+//		ObjectOutputStream oos  = new ObjectOutputStream(fos);
+//		oos.writeObject(e);
+//		System.out.println("done");
+		
+		
+		String path = "C:\\Users\\vitth\\Desktop\\\\data.txt";
+		FileInputStream fis = new FileInputStream(path);
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		Employee e = (Employee)ois.readObject();
+		System.out.println(e);
+		
+	}
+
+}
+
+class Employee implements Serializable{
+	int id;
+	String name;
+	double salary;
+	public Employee(int id, String name, double salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
+	
+	
+}

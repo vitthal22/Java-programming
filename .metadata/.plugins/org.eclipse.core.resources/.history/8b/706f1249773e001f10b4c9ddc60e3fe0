@@ -1,0 +1,51 @@
+package com.MainApp;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
+public class Data_And_Time {
+
+	public static void main(String[] args) {
+		//Date And Time
+		
+//		LocalDate d = LocalDate.now();
+		
+//		String d = LocalDate.now().toString();
+//		System.out.println(d);
+		
+
+//		
+
+//		String d = LocalDate.now().plusDays(10).toString();
+//		System.out.println(d);
+//		String d1 = LocalDate.now().minusDays(2).toString();
+//		System.out.println(d1);
+//		String d2 = LocalDate.now().plusMonths(2).toString();
+//		System.out.println(d2);
+		
+		//Time
+//		LocalTime t = LocalTime.now();
+//		System.out.println(t);
+		
+		//Data&Time
+//		LocalDateTime dt = LocalDateTime.now();
+//		System.out.println(dt);
+		
+		LocalDateTime dt1 = LocalDateTime.now();
+		
+		String dtf = DateTimeFormatter.ofPattern("dd-mm-yyyy  HH:MM").format(dt1).toString();
+		
+		System.out.println(dtf);
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
+

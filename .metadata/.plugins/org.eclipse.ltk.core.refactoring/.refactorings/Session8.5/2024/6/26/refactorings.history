@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.MainApp.Anonymous_interface_class&apos; to &apos;Anonymous_inner_interface&apos;&#x0D;&#x0A;- Original project: &apos;Session8.5&apos;&#x0D;&#x0A;- Original element: &apos;com.MainApp.Anonymous_interface_class&apos;&#x0D;&#x0A;- Renamed element: &apos;com.MainApp.Anonymous_inner_interface&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Anonymous_interface_class&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.MainApp{Anonymous_interface_class.java[Anonymous_interface_class" matchStrategy="1" name="Anonymous_inner_interface" qualified="false" references="true" similarDeclarations="false" stamp="1719395763881" textual="false" version="1.0"/>
+</session>

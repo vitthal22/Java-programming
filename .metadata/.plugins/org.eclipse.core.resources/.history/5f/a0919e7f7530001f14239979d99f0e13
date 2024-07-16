@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+public class Task1 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Student arr[] = new Student[10];
+		
+		/*
+		 * add
+		 * read
+		 * delete
+		 * update
+		 */
+		
+		while(true)
+		{
+			System.out.println("""
+					Enter 1 to add
+					Enter 2 to read
+					Enter 3 to Delete
+					Enter 4 to update
+					Enter 5 to Exit """);
+			
+			int choice = sc.nextInt();
+			if (choice == 1) {
+				System.out.println("Add");
+				System.out.println("Enter Rollno.: ");
+				int r = sc.nextInt();
+				System.out.println("Enter name: ");
+				String n = sc.next();
+				System.out.println("Sucessfully Added");
+			}
+			else if (choice == 2) {
+				System.out.println("read");
+				
+			}
+			else if (choice == 3) {
+				System.out.println("delete");
+			}
+			else if (choice == 4) {
+				System.out.println("update");
+			}
+			else if (choice == 5) {
+				break;
+			}
+			else {
+				System.out.println("invalid");
+			}
+			
+		}
+
+	}
+
+}
+
+class Student
+{
+	int roll;
+	String name;
+	public Student(int roll, String name) {
+		this.roll = roll;
+		this.name = name;
+	}
+	public int getRoll() {
+		return roll;
+	}
+	public String getName() {
+		return name;
+	}
+	
+	
+	
+	
+}

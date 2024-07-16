@@ -1,0 +1,45 @@
+package com.MainApp;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class Task1 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Employee> al = new ArrayList<Employee>();
+		al.add(new Employee(10, "abc"));
+		al.add(new Employee(11, "xyz"));
+		al.add(new Employee(10, "aaa"));
+		
+		Collections.sort(al, Comparator.comparing(Employee::getId));
+		System.out.println(al);
+		
+		
+	}
+
+}
+
+class Employee{
+	int id;
+	String name;
+	public Employee(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + "]";
+	}
+	public int getId() {
+		return id;
+	}
+	public String getName() {
+		return name;
+	}
+	
+	
+	
+}

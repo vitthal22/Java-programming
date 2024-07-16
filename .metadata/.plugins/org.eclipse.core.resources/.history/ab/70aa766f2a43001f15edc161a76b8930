@@ -1,0 +1,22 @@
+package com.MainApp;
+
+public class Thread_priority extends Thread {
+	
+	@Override
+	public void run() {
+		System.out.println(Thread.currentThread().getName());
+	}
+
+	public static void main(String[] args) {
+		
+		Thread_priority t1 = new Thread_priority();
+		t1.setName("A");
+		Thread_priority t2 = new Thread_priority();
+		t2.setName("B");
+		
+		
+		t1.start();
+		t2.start();
+	}
+
+}

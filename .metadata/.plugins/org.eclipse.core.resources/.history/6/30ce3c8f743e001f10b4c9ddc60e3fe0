@@ -1,0 +1,20 @@
+package com.MainApp;
+
+import java.time.LocalDate;
+
+public class Data_And_Time {
+
+	public static void main(String[] args) {
+		//Date And Time
+		
+//		LocalDate d = LocalDate.now();
+		
+		String d = LocalDate.now().toString();
+		
+		
+		System.out.println(d);
+		
+	}
+
+}
+
